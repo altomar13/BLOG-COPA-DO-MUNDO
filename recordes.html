@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recordes da Copa — GoalZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .records-section { padding: 60px 0; }
+    .records-section h2 {
+      color: var(--green-dark);
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+    }
+    .records-section p.intro {
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      font-size: 1rem;
+    }
+    .records-block { margin-bottom: 56px; }
+
+    .trophy-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .trophy-item {
+      flex: 1;
+      min-width: 180px;
+      background: var(--green-dark);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: center;
+    }
+    .trophy-item .t-icon { font-size: 2.2rem; margin-bottom: 8px; }
+    .trophy-item .t-num {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .trophy-item .t-label {
+      font-family: var(--font-cond);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-top: 4px;
+    }
+    .trophy-item .t-sub {
+      font-family: var(--font-cond);
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">GOAL<em>ZONE</em></span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="recordes.html" class="active">Recordes</a>
+        <a href="selecoes.html">Seleções</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-tag">Copa do Mundo FIFA</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Números Históricos</span>
+        <h1>RECORDES &<br><em>ESTATÍSTICAS</em></h1>
+        <p>Os números que definem a grandeza da Copa do Mundo — dos maiores artilheiros às vitórias mais expressivas e feitos inesquecíveis.</p>
+      </div>
+    </section>
+
+    <section class="records-section">
+      <div class="container">
+
+        <!-- ARTILHEIROS -->
+        <div class="records-block">
+          <span class="section-tag">Artilharia</span>
+          <h2>Maiores Artilheiros da História</h2>
+          <p class="intro">Os jogadores que mais marcaram gols em todas as edições da Copa do Mundo FIFA.</p>
+          <table class="records-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Jogador</th>
+                <th>País</th>
+                <th>Gols</th>
+                <th>Edições</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="gold-rank">🥇 1°</span></td>
+                <td><strong>Miroslav Klose</strong></td>
+                <td>🇩🇪 Alemanha</td>
+                <td><strong>16</strong></td>
+                <td>2002, 2006, 2010, 2014</td>
+              </tr>
+              <tr>
+                <td><span class="gold-rank">🥈 2°</span></td>
+                <td><strong>Ronaldo Fenômeno</strong></td>
+                <td>🇧🇷 Brasil</td>
+                <td><strong>15</strong></td>
+                <td>1994, 1998, 2002, 2006</td>
+              </tr>
+              <tr>
+                <td><span class="gold-rank">🥉 3°</span></td>
+                <td><strong>Gerd Müller</strong></td>
+                <td>🇩🇪 Alemanha</td>
+                <td><strong>14</strong></td>
+                <td>1970, 1974</td>
+              </tr>
+              <tr>
+                <td>4°</td>
+                <td>Just Fontaine</td>
+                <td>🇫🇷 França</td>
+                <td>13</td>
+                <td>1958</td>
+              </tr>
+              <tr>
+                <td>5°</td>
+                <td>Pelé</td>
+                <td>🇧🇷 Brasil</td>
+                <td>12</td>
+                <td>1958, 1962, 1966, 1970</td>
+              </tr>
+              <tr>
+                <td>6°</td>
+                <td>Sándor Kocsis</td>
+                <td>🇭🇺 Hungria</td>
+                <td>11</td>
+                <td>1954</td>
+              </tr>
+              <tr>
+                <td>7°</td>
+                <td>Jürgen Klinsmann</td>
+                <td>🇩🇪 Alemanha</td>
+                <td>11</td>
+                <td>1990, 1994, 1998</td>
+              </tr>
+              <tr>
+                <td>8°</td>
+                <td>Helmut Rahn</td>
+                <td>🇩🇪 Alemanha</td>
+                <td>10</td>
+                <td>1954, 1958</td>
+              </tr>
+              <tr>
+                <td>9°</td>
+                <td>Teófilo Cubillas</td>
+                <td>🇵🇪 Peru</td>
+                <td>10</td>
+                <td>1970, 1978</td>
+              </tr>
+              <tr>
+                <td>10°</td>
+                <td>Lionel Messi</td>
+                <td>🇦🇷 Argentina</td>
+                <td>13</td>
+                <td>2006, 2010, 2014, 2018, 2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- CAMPEÕES -->
+        <div class="records-block">
+          <span class="section-tag">Títulos por País</span>
+          <h2>Países Campeões do Mundo</h2>
+          <p class="intro">As seleções que ergueram a Taça do Mundo ao longo das 22 edições realizadas.</p>
+          <table class="records-table">
+            <thead>
+              <tr>
+                <th>País</th>
+                <th>Títulos</th>
+                <th>Anos</th>
+                <th>Finais Disputadas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>🇧🇷 <strong>Brasil</strong></td>
+                <td><strong>5</strong></td>
+                <td>1958, 1962, 1970, 1994, 2002</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>🇩🇪 <strong>Alemanha</strong></td>
+                <td><strong>4</strong></td>
+                <td>1954, 1974, 1990, 2014</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>🇮🇹 <strong>Itália</strong></td>
+                <td><strong>4</strong></td>
+                <td>1934, 1938, 1982, 2006</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>🇦🇷 <strong>Argentina</strong></td>
+                <td><strong>3</strong></td>
+                <td>1978, 1986, 2022</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>🇫🇷 <strong>França</strong></td>
+                <td><strong>2</strong></td>
+                <td>1998, 2018</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>🇺🇾 <strong>Uruguai</strong></td>
+                <td><strong>2</strong></td>
+                <td>1930, 1950</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>🏴󠁧󠁢󠁥󠁮󠁧󠁿 <strong>Inglaterra</strong></td>
+                <td><strong>1</strong></td>
+                <td>1966</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>🇪🇸 <strong>Espanha</strong></td>
+                <td><strong>1</strong></td>
+                <td>2010</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- RECORDES GERAIS -->
+        <div class="records-block">
+          <span class="section-tag">Fatos & Números</span>
+          <h2>Recordes Gerais da Competição</h2>
+          <p class="intro">Marcos históricos que definem a Copa do Mundo em números.</p>
+          <div class="trophy-row">
+            <div class="trophy-item">
+              <div class="t-icon">⚽</div>
+              <div class="t-num">16</div>
+              <div class="t-label">Maior artilheiro</div>
+              <div class="t-sub">Miroslav Klose (ALE)</div>
+            </div>
+            <div class="trophy-item">
+              <div class="t-icon">🏆</div>
+              <div class="t-num">5</div>
+              <div class="t-label">Mais títulos</div>
+              <div class="t-sub">Brasil</div>
+            </div>
+            <div class="trophy-item">
+              <div class="t-icon">🎯</div>
+              <div class="t-num">13</div>
+              <div class="t-label">Gols em 1 edição</div>
+              <div class="t-sub">Just Fontaine (FRA, 1958)</div>
+            </div>
+            <div class="trophy-item">
+              <div class="t-icon">💥</div>
+              <div class="t-num">7×1</div>
+              <div class="t-label">Maior vitória numa semi</div>
+              <div class="t-sub">ALE × BRA, 2014</div>
+            </div>
+            <div class="trophy-item">
+              <div class="t-icon">👤</div>
+              <div class="t-num">5</div>
+              <div class="t-label">Copas jogadas (recorde)</div>
+              <div class="t-sub">Messi, Brehme, Matthäus...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GOLEADAS -->
+        <div class="records-block">
+          <span class="section-tag">Goleadas Históricas</span>
+          <h2>Maiores Goleadas da Copa do Mundo</h2>
+          <p class="intro">As vitórias mais expressivas registradas em toda a história do torneio.</p>
+          <table class="records-table">
+            <thead>
+              <tr>
+                <th>Placar</th>
+                <th>Vencedor</th>
+                <th>Derrotado</th>
+                <th>Ano</th>
+                <th>Fase</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 × 1</strong></td>
+                <td>🇭🇺 Hungria</td>
+                <td>🇸🇻 El Salvador</td>
+                <td>1982</td>
+                <td>Fase de Grupos</td>
+              </tr>
+              <tr>
+                <td><strong>9 × 0</strong></td>
+                <td>🇭🇺 Hungria</td>
+                <td>🇰🇷 Coreia do Sul</td>
+                <td>1954</td>
+                <td>Fase de Grupos</td>
+              </tr>
+              <tr>
+                <td><strong>9 × 0</strong></td>
+                <td>🇾🇺 Iugoslávia</td>
+                <td>🇿🇦 Zaire</td>
+                <td>1974</td>
+                <td>Fase de Grupos</td>
+              </tr>
+              <tr>
+                <td><strong>8 × 0</strong></td>
+                <td>🇺🇾 Uruguai</td>
+                <td>🇧🇴 Bolívia</td>
+                <td>1950</td>
+                <td>Fase de Grupos</td>
+              </tr>
+              <tr>
+                <td><strong>7 × 1</strong></td>
+                <td>🇩🇪 Alemanha</td>
+                <td>🇧🇷 Brasil</td>
+                <td>2014</td>
+                <td>Semifinal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">GOAL<em>ZONE</em></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="recordes.html">Recordes</a>
+        <a href="selecoes.html">Seleções</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <p class="footer-copy">© 2025 GoalZone · Blog sobre Copa do Mundo FIFA</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grandes Seleções — GoalZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .teams-intro {
+      background: var(--off-white);
+      padding: 60px 0;
+    }
+    .teams-intro p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 700px;
+    }
+    .teams-intro h2 { margin-bottom: 14px; }
+
+    .featured-team {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 48px;
+      align-items: center;
+      padding: 56px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .featured-team:last-child { border-bottom: none; }
+    .featured-team.reverse { direction: rtl; }
+    .featured-team.reverse > * { direction: ltr; }
+
+    .ft-text { }
+    .ft-flag { font-size: 3.5rem; margin-bottom: 10px; line-height: 1; }
+    .ft-text h2 { color: var(--green-dark); font-size: 2rem; margin-bottom: 8px; }
+    .ft-text p { color: var(--text-muted); margin-bottom: 12px; }
+
+    .ft-stats {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .ft-stat {
+      background: var(--green-dark);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      text-align: center;
+      min-width: 100px;
+    }
+    .ft-stat .num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .ft-stat .lbl {
+      font-family: var(--font-cond);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-top: 4px;
+    }
+
+    .ft-stars {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .ft-stars span {
+      background: var(--off-white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-family: var(--font-cond);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    .ft-img-wrap {
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">GOAL<em>ZONE</em></span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="recordes.html">Recordes</a>
+        <a href="selecoes.html" class="active">Seleções</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <div class="header-tag">Copa do Mundo FIFA</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Potências do Futebol</span>
+        <h1>AS GRANDES<br><em>SELEÇÕES</em></h1>
+        <p>Conheça as equipes que moldaram a história da Copa do Mundo — seus títulos, ídolos e momentos inesquecíveis.</p>
+      </div>
+    </section>
+
+    <section class="teams-intro">
+      <div class="container">
+        <span class="section-tag">Visão Geral</span>
+        <h2>Potências do Futebol Mundial</h2>
+        <p>Ao longo de mais de 90 anos de Copa do Mundo, algumas seleções se destacaram por sua consistência, talento e capacidade de vencer sob pressão. Estas são as equipes que escreveram os capítulos mais gloriosos do torneio.</p>
+        <div class="teams-grid" style="margin-top:32px;">
+          <div class="team-card">
+            <div class="team-flag">🇧🇷</div>
+            <div class="team-info">
+              <h3>Brasil</h3>
+              <p>O único pentacampeão da história.</p>
+              <div class="team-titles"><span>🏆</span> 5 títulos — 1958, 1962, 1970, 1994, 2002</div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-flag">🇩🇪</div>
+            <div class="team-info">
+              <h3>Alemanha</h3>
+              <p>A máquina de consistência europeia.</p>
+              <div class="team-titles"><span>🏆</span> 4 títulos — 1954, 1974, 1990, 2014</div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-flag">🇮🇹</div>
+            <div class="team-info">
+              <h3>Itália</h3>
+              <p>O futebol clássico e defensivo.</p>
+              <div class="team-titles"><span>🏆</span> 4 títulos — 1934, 1938, 1982, 2006</div>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-flag">🇦🇷</div>
+            <div class="team-info">
+              <h3>Argentina</h3>
+              <p>Terra de Maradona e Messi.</p>
+              <div class="team-titles"><span>🏆</span> 3 títulos — 1978, 1986, 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- BRASIL -->
+        <div class="featured-team">
+          <div class="ft-text">
+            <div class="ft-flag">🇧🇷</div>
+            <span class="section-tag">5 Títulos</span>
+            <h2>Brasil — O Pentacampeão</h2>
+            <p>O Brasil é a única seleção a ter participado de todas as edições da Copa do Mundo e o único a conquistar o torneio cinco vezes. Com jogadores como Pelé, Garrincha, Zico, Romário, Ronaldo e Neymar, a seleção brasileira é sinônimo de futebol arte.</p>
+            <p>O ápice aconteceu em 1970, no México, quando uma seleção considerada a melhor da história conquistou o tricampeonato com um futebol ofensivo e espetacular. O pentacampeonato veio em 2002, liderado por Ronaldo Fenômeno.</p>
+            <div class="ft-stats">
+              <div class="ft-stat"><div class="num">5</div><div class="lbl">Títulos</div></div>
+              <div class="ft-stat"><div class="num">7</div><div class="lbl">Finais</div></div>
+              <div class="ft-stat"><div class="num">237</div><div class="lbl">Gols marcados</div></div>
+              <div class="ft-stat"><div class="num">109</div><div class="lbl">Jogos</div></div>
+            </div>
+            <div class="ft-stars">
+              <span>Pelé</span><span>Garrincha</span><span>Zico</span><span>Romário</span><span>Ronaldo</span><span>Neymar</span>
+            </div>
+          </div>
+          <div class="ft-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/2022_FIFA_World_Cup_Group_G_Brazil_vs_Serbia_%2805%29.jpg/800px-2022_FIFA_World_Cup_Group_G_Brazil_vs_Serbia_%2805%29.jpg" alt="Seleção Brasileira" />
+          </div>
+        </div>
+
+        <!-- ALEMANHA -->
+        <div class="featured-team reverse">
+          <div class="ft-text">
+            <div class="ft-flag">🇩🇪</div>
+            <span class="section-tag">4 Títulos</span>
+            <h2>Alemanha — A Máquina Eficiente</h2>
+            <p>A Alemanha é conhecida por sua disciplina tática, eficiência e mentalidade vencedora. Nunca ausente em grandes fases, os alemães chegaram à final 8 vezes — o maior número entre todas as seleções — conquistando 4 títulos.</p>
+            <p>Em 2014, no Brasil, a Alemanha encerrou um ciclo de ouro ao golear o Brasil por 7 a 1 nas semifinais e conquistar o tetracampeonato mundial. Nomes como Franz Beckenbauer, Gerd Müller, Lothar Matthäus, Oliver Kahn e Miroslav Klose são eternos na história.</p>
+            <div class="ft-stats">
+              <div class="ft-stat"><div class="num">4</div><div class="lbl">Títulos</div></div>
+              <div class="ft-stat"><div class="num">8</div><div class="lbl">Finais</div></div>
+              <div class="ft-stat"><div class="num">226</div><div class="lbl">Gols marcados</div></div>
+              <div class="ft-stat"><div class="num">106</div><div class="lbl">Jogos</div></div>
+            </div>
+            <div class="ft-stars">
+              <span>Beckenbauer</span><span>Gerd Müller</span><span>Matthäus</span><span>Klose</span><span>Kahn</span>
+            </div>
+          </div>
+          <div class="ft-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/FIFA_World_Cup_trophy.jpg/800px-FIFA_World_Cup_trophy.jpg" alt="Seleção Alemanha" />
+          </div>
+        </div>
+
+        <!-- ARGENTINA -->
+        <div class="featured-team">
+          <div class="ft-text">
+            <div class="ft-flag">🇦🇷</div>
+            <span class="section-tag">3 Títulos</span>
+            <h2>Argentina — De Maradona a Messi</h2>
+            <p>A Argentina tem uma das histórias mais apaixonantes da Copa do Mundo. Em 1986, Diego Maradona entregou uma das melhores performances individuais da história do esporte, guiando a Argentina ao bicampeonato com gols antológicos contra a Inglaterra.</p>
+            <p>Em 2022, no Catar, chegou a vez de Lionel Messi finalmente conquistar o maior troféu do futebol, em uma final épica contra a França que terminou 3 a 3 e foi decidida nos pênaltis — considerada por muitos a melhor final de todos os tempos.</p>
+            <div class="ft-stats">
+              <div class="ft-stat"><div class="num">3</div><div class="lbl">Títulos</div></div>
+              <div class="ft-stat"><div class="num">5</div><div class="lbl">Finais</div></div>
+              <div class="ft-stat"><div class="num">185</div><div class="lbl">Gols marcados</div></div>
+              <div class="ft-stat"><div class="num">88</div><div class="lbl">Jogos</div></div>
+            </div>
+            <div class="ft-stars">
+              <span>Maradona</span><span>Kempes</span><span>Batistuta</span><span>Messi</span><span>Di María</span>
+            </div>
+          </div>
+          <div class="ft-img-wrap">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ronaldo_cropped.jpg/800px-Ronaldo_cropped.jpg" alt="Argentina Copa do Mundo" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">GOAL<em>ZONE</em></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="recordes.html">Recordes</a>
+        <a href="selecoes.html">Seleções</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <p class="footer-copy">© 2025 GoalZone · Blog sobre Copa do Mundo FIFA</p>
+    </div>
+  </footer>
+
+</body>
+</html>

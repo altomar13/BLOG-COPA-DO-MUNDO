@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — GoalZone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-section { padding: 70px 0; }
+
+    .contact-success {
+      display: none;
+      background: var(--green-dark);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-top: 20px;
+      font-family: var(--font-cond);
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+    }
+    .contact-success strong { color: var(--gold); }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 16px;
+      background: var(--off-white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      font-family: var(--font-cond);
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      color: var(--green-dark);
+      transition: background 0.2s, color 0.2s;
+    }
+    .social-link:hover {
+      background: var(--green-dark);
+      color: var(--gold);
+    }
+    .social-link .s-icon { font-size: 1.4rem; }
+
+    .faq-section { padding: 60px 0; background: var(--off-white); }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .faq-item h4 {
+      font-family: var(--font-cond);
+      font-size: 1.05rem;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+    .faq-item p { color: var(--text-muted); font-size: 0.95rem; }
+
+    .map-placeholder {
+      background: var(--green-dark);
+      border-radius: var(--radius);
+      padding: 48px 32px;
+      text-align: center;
+      color: var(--white);
+      margin-top: 24px;
+    }
+    .map-placeholder .mp-icon { font-size: 3rem; margin-bottom: 12px; }
+    .map-placeholder p {
+      color: rgba(255,255,255,0.7);
+      font-family: var(--font-cond);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 700px) {
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">GOAL<em>ZONE</em></span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="recordes.html">Recordes</a>
+        <a href="selecoes.html">Seleções</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+      <div class="header-tag">Copa do Mundo FIFA</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-tag">Fale Conosco</span>
+        <h1>ENTRE EM<br><em>CONTATO</em></h1>
+        <p>Tem uma sugestão de pauta, uma correção ou quer colaborar com o GoalZone? Adoramos ouvir fãs de futebol!</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- FORM -->
+          <div class="contact-form-wrap">
+            <span class="section-tag">Envie uma Mensagem</span>
+            <h2 style="margin:12px 0 24px; color:var(--green-dark);">Fale com a Redação</h2>
+
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" placeholder="Ex: João da Silva" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto">
+                <option value="">Selecione o assunto</option>
+                <option value="sugestao">Sugestão de pauta</option>
+                <option value="correcao">Correção de informação</option>
+                <option value="colaboracao">Colaboração / Parceria</option>
+                <option value="publicidade">Publicidade</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+
+            <button onclick="enviarMensagem()" class="btn-primary" style="cursor:pointer; width:100%; font-size:1rem; padding:16px;">
+              Enviar Mensagem
+            </button>
+
+            <div class="contact-success" id="successMsg">
+              ✅ <strong>Mensagem enviada com sucesso!</strong><br>
+              Nossa equipe retornará em até 48 horas. Obrigado pelo contato!
+            </div>
+          </div>
+
+          <!-- INFO -->
+          <div class="contact-info">
+            <span class="section-tag">Informações</span>
+            <h3 style="margin:12px 0 14px;">GoalZone — Redação</h3>
+            <p>Somos apaixonados pelo futebol e pela Copa do Mundo. Nossa equipe está sempre à disposição para responder dúvidas, receber sugestões e conversar sobre o esporte mais popular do mundo.</p>
+
+            <div class="contact-info-item">
+              <div class="icon">📧</div>
+              <span>redacao@goalzone.com.br</span>
+            </div>
+            <div class="contact-info-item">
+              <div class="icon">📍</div>
+              <span>Vila Velha, Espírito Santo — Brasil</span>
+            </div>
+            <div class="contact-info-item">
+              <div class="icon">⏰</div>
+              <span>Seg–Sex, 9h às 18h (Horário de Brasília)</span>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <span class="s-icon">📘</span>
+                <span>/GoalZoneBrasil</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="s-icon">📸</span>
+                <span>@goalzone.br</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="s-icon">🐦</span>
+                <span>@GoalZoneBR</span>
+              </a>
+              <a href="#" class="social-link">
+                <span class="s-icon">▶️</span>
+                <span>GoalZone — Canal Oficial</span>
+              </a>
+            </div>
+
+            <div class="map-placeholder">
+              <div class="mp-icon">🗺️</div>
+              <p>VILA VELHA · ESPÍRITO SANTO · BRASIL</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dúvidas Frequentes</span>
+          <h2>Perguntas Frequentes</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4>Com que frequência o blog é atualizado?</h4>
+            <p>Publicamos novos conteúdos semanalmente, com atualizações especiais durante períodos de Copa do Mundo e classificatórias.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Como posso colaborar com o GoalZone?</h4>
+            <p>Aceitamos colaborações de jornalistas e apaixonados por futebol. Entre em contato pelo formulário selecionando "Colaboração / Parceria".</p>
+          </div>
+          <div class="faq-item">
+            <h4>As informações do blog são confiáveis?</h4>
+            <p>Sim! Todas as informações são baseadas em fontes oficiais da FIFA, registros históricos e dados verificados por nossa equipe editorial.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Posso reproduzir conteúdo do GoalZone?</h4>
+            <p>Conteúdos podem ser compartilhados com a devida atribuição ao GoalZone. Para uso comercial, entre em contato conosco primeiro.</p>
+          </div>
+          <div class="faq-item">
+            <h4>O blog cobre apenas a Copa do Mundo masculina?</h4>
+            <p>Nosso foco principal é a Copa do Mundo FIFA masculina, mas planejamos expandir para cobrir também a Copa do Mundo Feminina em breve.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Há uma newsletter do GoalZone?</h4>
+            <p>Estamos trabalhando em uma newsletter mensal com os melhores conteúdos sobre Copa do Mundo. Fique ligado nas nossas redes sociais!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-icon">⚽</span>
+        <span class="logo-text">GOAL<em>ZONE</em></span>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="historia.html">História</a>
+        <a href="recordes.html">Recordes</a>
+        <a href="selecoes.html">Seleções</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <p class="footer-copy">© 2025 GoalZone · Blog sobre Copa do Mundo FIFA</p>
+    </div>
+  </footer>
+
+  <script>
+    function enviarMensagem() {
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('mensagem').value.trim();
+
+      if (!nome || !email || !msg) {
+        alert('Por favor, preencha pelo menos nome, e-mail e mensagem.');
+        return;
+      }
+
+      document.getElementById('successMsg').style.display = 'block';
+      document.getElementById('nome').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('mensagem').value = '';
+      document.getElementById('assunto').value = '';
+    }
+  </script>
+
+</body>
+</html>
